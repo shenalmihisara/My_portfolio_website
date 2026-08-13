@@ -5,3 +5,12 @@ function changeColor() {
     btn.classList.remove("btn-primary");
     btn.classList.add("btn-success");
 }
+
+function htmlSkillOnAction(){
+    // let ab=getElementById("html");
+    alert("hii")
+}
+
+function cssSkillOnAction(){
+    alert("hii");
+}
