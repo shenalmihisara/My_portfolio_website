@@ -14,3 +14,15 @@ function htmlSkillOnAction(){
 function cssSkillOnAction(){
     alert("hii");
 }
+
+function javaScriptOnAction(){
+    alert("hii");
+}
+
+function javaOnAction(){
+    alert("hii");
+}
+
+function mySqlOnAction(){
+    alert("hii")
+}
