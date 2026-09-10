@@ -1,123 +1,487 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <title>Skills | Shenal Mihisara</title>
+
+    <!-- Bootstrap Only -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+        crossorigin="anonymous">
+
 </head>
 
-<body>
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand text-info" href="/index.html">Shenal Mihisara</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+<body class="bg-black text-light">
+
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-secondary sticky-top">
+
+        <div class="container">
+
+            <!-- Brand -->
+
+            <a class="navbar-brand fw-bold fs-4 text-info"
+                href="/index.html">
+
+                Shenal<span class="text-light">.</span>
+
+            </a>
+
+
+            <!-- Mobile Button -->
+
+            <button class="navbar-toggler shadow-none"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbar">
+
                 <span class="navbar-toggler-icon"></span>
+
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+
+            <!-- Navigation -->
+
+            <div class="collapse navbar-collapse" id="navbar">
+
+                <ul class="navbar-nav mx-auto gap-lg-3">
+
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+
+                        <a class="nav-link"
+                            href="/index.html">
+
+                            Home
+
+                        </a>
+
                     </li>
+
+
                     <li class="nav-item">
-                        <a class="nav-link" href="/about.html">About</a>
+
+                        <a class="nav-link"
+                            href="/about.html">
+
+                            About
+
+                        </a>
+
                     </li>
+
+
                     <li class="nav-item">
-                        <a class="nav-link" href="/skills.html">Skills</a>
+
+                        <a class="nav-link active text-info"
+                            href="/skills.html">
+
+                            Skills
+
+                        </a>
+
                     </li>
+
+
                     <li class="nav-item">
-                        <a class="nav-link" href="/projects.html">Projects</a>
+
+                        <a class="nav-link"
+                            href="/projects.html">
+
+                            Projects
+
+                        </a>
+
                     </li>
+
                 </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+
+
+                <a href="/projects.html"
+                    class="btn btn-outline-info rounded-pill px-4">
+
+                    My Projects
+
+                </a>
+
             </div>
+
         </div>
+
     </nav>
 
-    <hr>
 
-    <div class="container mt-4">
-        <h1 class="text-center mb-4 fw-bold fst-italic" style="color: rgb(0, 0, 49);">My Skills</h1>
 
-        <div class="row justify-content-center g-3">
+    <!-- ================= SKILLS SECTION ================= -->
 
-            <div class="col-auto btn" id="html" onclick="htmlSkillOnAction()">
-                <div class="card" style="width: 15rem; height: 7rem;">
-                    <div class="card-body">
-                        <img class="d-block mx-auto" width="80" style="width: 65px;" src="/images/html logo 1.png" alt="HTML">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <h5 class="card-title mb-0">HTML</h5>
-                            <p class="mb-0">click me</p>
-                        </div>
-                    </div>
-                </div>
+    <main class="min-vh-100 bg-black">
+
+        <div class="container py-5">
+
+
+            <!-- HEADER -->
+
+            <div class="text-center mb-5">
+
+                <p class="text-info fw-bold mb-2">
+
+                    MY TECHNOLOGIES
+
+                </p>
+
+
+                <h1 class="display-4 fw-bold">
+
+                    My <span class="text-info">Skills</span>
+
+                </h1>
+
+
+                <p class="text-secondary mx-auto">
+
+                    Technologies and tools I use to build modern
+                    web applications and software.
+
+                </p>
+
             </div>
 
-            <div class="col-auto btn" id="css" onclick="cssSkillOnAction()">
-                <div class="card" style="width: 15rem; height: 7rem;">
-                    <div class="card-body">
-                        <img class="d-block mx-auto" style="width: 60px;" src="/images/css logo.png" alt="css">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <h5 class="card-title mb-0">CSS</h5>
-                            <p class="mb-0">click me</p>
+
+
+            <!-- ================= SKILLS CARDS ================= -->
+
+            <div class="row justify-content-center g-4">
+
+
+                <!-- HTML -->
+
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+
+                    <button type="button"
+                        id="html"
+                        onclick="htmlSkillOnAction()"
+                        class="btn w-100 text-start p-0">
+
+                        <div class="card bg-dark border-secondary rounded-4 shadow-lg h-100">
+
+                            <div class="card-body p-4">
+
+                                <div class="d-flex justify-content-center align-items-center mb-4"
+                                    style="height:80px;">
+
+                                    <img src="/images/html logo 1.png"
+                                        class="img-fluid"
+                                        style="max-width:65px; max-height:65px;"
+                                        alt="HTML">
+
+                                </div>
+
+
+                                <div class="d-flex justify-content-between align-items-center">
+
+                                    <h5 class="text-light fw-bold mb-0">
+
+                                        HTML
+
+                                    </h5>
+
+
+                                    <span class="badge text-info border border-info">
+
+                                        Click
+
+                                    </span>
+
+                                </div>
+
+                            </div>
+
                         </div>
-                    </div>
+
+                    </button>
+
                 </div>
+
+
+
+                <!-- CSS -->
+
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+
+                    <button type="button"
+                        id="css"
+                        onclick="cssSkillOnAction()"
+                        class="btn w-100 text-start p-0">
+
+                        <div class="card bg-dark border-secondary rounded-4 shadow-lg h-100">
+
+                            <div class="card-body p-4">
+
+                                <div class="d-flex justify-content-center align-items-center mb-4"
+                                    style="height:80px;">
+
+                                    <img src="/images/css logo.png"
+                                        class="img-fluid"
+                                        style="max-width:65px; max-height:65px;"
+                                        alt="CSS">
+
+                                </div>
+
+
+                                <div class="d-flex justify-content-between align-items-center">
+
+                                    <h5 class="text-light fw-bold mb-0">
+
+                                        CSS
+
+                                    </h5>
+
+
+                                    <span class="badge text-info border border-info">
+
+                                        Click
+
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </button>
+
+                </div>
+
+
+
+                <!-- JAVASCRIPT -->
+
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+
+                    <button type="button"
+                        id="javaScript"
+                        onclick="javaScriptOnAction()"
+                        class="btn w-100 text-start p-0">
+
+                        <div class="card bg-dark border-secondary rounded-4 shadow-lg h-100">
+
+                            <div class="card-body p-4">
+
+                                <div class="d-flex justify-content-center align-items-center mb-4"
+                                    style="height:80px;">
+
+                                    <img src="/images/jss.png"
+                                        class="img-fluid"
+                                        style="max-width:65px; max-height:65px;"
+                                        alt="JavaScript">
+
+                                </div>
+
+
+                                <div class="d-flex justify-content-between align-items-center">
+
+                                    <h5 class="text-light fw-bold mb-0">
+
+                                        JavaScript
+
+                                    </h5>
+
+
+                                    <span class="badge text-info border border-info">
+
+                                        Click
+
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </button>
+
+                </div>
+
+
+
+                <!-- JAVA -->
+
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+
+                    <button type="button"
+                        id="java"
+                        onclick="javaOnAction()"
+                        class="btn w-100 text-start p-0">
+
+                        <div class="card bg-dark border-secondary rounded-4 shadow-lg h-100">
+
+                            <div class="card-body p-4">
+
+                                <div class="d-flex justify-content-center align-items-center mb-4"
+                                    style="height:80px;">
+
+                                    <img src="/images/java.png"
+                                        class="img-fluid"
+                                        style="max-width:65px; max-height:65px;"
+                                        alt="Java">
+
+                                </div>
+
+
+                                <div class="d-flex justify-content-between align-items-center">
+
+                                    <h5 class="text-light fw-bold mb-0">
+
+                                        Java
+
+                                    </h5>
+
+
+                                    <span class="badge text-info border border-info">
+
+                                        Click
+
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </button>
+
+                </div>
+
+
+
+                <!-- MYSQL -->
+
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+
+                    <button type="button"
+                        id="mySql"
+                        onclick="mySqlOnAction()"
+                        class="btn w-100 text-start p-0">
+
+                        <div class="card bg-dark border-secondary rounded-4 shadow-lg h-100">
+
+                            <div class="card-body p-4">
+
+                                <div class="d-flex justify-content-center align-items-center mb-4"
+                                    style="height:80px;">
+
+                                    <img src="/images/mysql.png"
+                                        class="img-fluid"
+                                        style="max-width:65px; max-height:65px;"
+                                        alt="MySQL">
+
+                                </div>
+
+
+                                <div class="d-flex justify-content-between align-items-center">
+
+                                    <h5 class="text-light fw-bold mb-0">
+
+                                        MySQL
+
+                                    </h5>
+
+
+                                    <span class="badge text-info border border-info">
+
+                                        Click
+
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </button>
+
+                </div>
+
+
             </div>
 
-            <div class="col-auto btn" id="javaScript" onclick="javaScriptOnAction()">
-                <div class="card" style="width: 15rem; height: 7rem;">
-                    <div class="card-body">
-                        <img class="d-block mx-auto" style="width: 60px;" src="/images/jss.png" alt="js">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <h5 class="card-title mb-0">JAVASCRIPT</h5>
-                            <p class="mb-0">click me</p>
-                        </div>
-                    </div>
-                </div>
+
+
+            <!-- ================= MESSAGE ================= -->
+
+            <div class="text-center mt-5">
+
+                <p class="text-secondary">
+
+                    Click on a technology to learn more about my experience.
+
+                </p>
+
             </div>
 
-            <div class="col-auto btn" id="java" onclick="javaOnAction()">
-                <div class="card" style="width: 15rem; height: 7rem;">
-                    <div class="card-body">
-                        <img class="d-block mx-auto" style="width: 60px;" src="/images/java.png" alt="Java">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <h5 class="card-title mb-0">JAVA</h5>
-                            <p class="mb-0">click me</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-auto btn" id="mySql" onclick="mySqlOnAction()">
-                <div class="card" style="width: 15rem; height: 7rem;">
-                    <div class="card-body">
-                        <img class="d-block mx-auto" style="width: 60px;" src="/images/mysql.png" alt="MySql">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <h5 class="card-title mb-0">MYSQL</h5>
-                            <p class="mb-0">click me</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
         </div>
-    </div>
+
+    </main>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="bg-dark border-top border-secondary py-4">
+
+        <div class="container text-center">
+
+            <p class="text-secondary mb-1">
+
+                © 2026 Shenal Mihisara
+
+            </p>
+
+            <small class="text-secondary">
+
+                Software Developer | Full-Stack Developer
+
+            </small>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- Your JavaScript -->
 
     <script src="/app.js"></script>
+
+
+    <!-- Bootstrap JS -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous">
+    </script>
+
+
+    <!-- SweetAlert -->
+
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </body>
 
 </html>
+```
